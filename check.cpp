@@ -18,12 +18,46 @@ typedef vector<vi>vii;
 typedef pair<ll,ll>pi;
 typedef tuple<ll,ll,ll>ti;
 
+ll mod=1e9+7;
+
+
+int gcd(int a,int b){
+    if(b==0){
+       return a;
+    }
+    else{
+        return gcd(b,a%b);
+    }
+}
 
 int main(){
     ios_base::sync_with_stdio(false);
-    ll n;
-    cin>>n;
-    vi v(n);
+    ll a=0,b=0,c=2;
+    a=b+=c++;
+    cout<<a<<" "<<b<<" "<<c<<endl;
+
+}
+
+/*
+
+
+    for(int i=1;i<=n;i++){
+        int x=i;
+        int sum=0;
+        for(int j=1;j<=x;j++){
+            sum+=gcd(j,x);
+        }
+        arr[i]=sum%mod;
+    }
+
+    for(int i=1;i<=n;i++){
+        cout<<i<<" "<<arr[i]<<endl;
+    }
+
+
+*/
+
+/*
     for(ll i=0;i<n;i++){
         cin>>v[i];
     }
@@ -36,8 +70,8 @@ int main(){
          cout<<i<<" ";
      }
 
-}
 
+*/
 
 /*
 
